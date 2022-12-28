@@ -1,0 +1,194 @@
+body{
+    width: 940px;
+    margin: 0 ;
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+  
+}
+
+header{
+    padding: 20px;
+}
+.logoOracle{
+    width: 60px;
+    background: #E5E5E5;
+    
+}
+
+
+
+fieldset{
+    position: absolute;
+    left: 120px;
+    
+
+}
+
+.texto{
+    width: 660px;
+    height: 303px;
+    background: #E5E5E5;
+    border:none;
+    font-size: 18px;
+    color: #495057;
+    font-family: inter;
+    font-weight: bold;
+    margin-bottom: 80px;
+    
+}
+
+
+.texto:focus{
+    border: none;
+    outline: none;
+}
+.texto::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: inter;
+}
+.botonesEncrip{
+    display: flex;
+    gap: 8px;
+}
+
+
+
+
+.botonEnviar{
+    font-family: inter;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.botonEnviar:hover{
+    background: rgb(49, 58, 226);
+    transform: scale(1.02);
+    border: 5px silver solid;
+    font-size: 18px;
+
+}
+
+.botonDesencriptar{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: inter;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.5s all;
+   
+}
+.botonDesencriptar:hover{
+    background: rgb(179, 180, 191);
+    transform: scale(1.02);
+    border: 5px silver solid;
+    font-size: 18px;
+}
+
+
+.resultado{
+    position: absolute;
+    left: 900px;
+    text-align: center;
+    height: 500px;
+    
+}
+.resivir{
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    background-image: url(imagenes/Muñeco.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 50px 90px;
+    font-size: 18px;
+    color: #495057;
+    font-family: inter;
+    font-weight: bold;
+    
+}
+
+.cajondeResultado{
+    width:400px;
+    height: 500px;
+}
+
+.cajondeResultado li{
+    position: absolute;
+    top: 470px;
+    left: 950px;
+    text-align: center;
+}
+
+
+.cajondeResultado p{
+    width: 300px;
+    
+}
+.mensjNoEncon{
+    font-weight: bold;
+}
+
+
+.botoncopy{
+    width: 288px;
+    height: 67px;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 16px;
+    background: #D8DFE8;
+    line-height: 19px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.botoncopy:hover{
+    background: rgb(179, 180, 191);
+    transform: scale(1.02);
+    border: 5px silver solid;
+    font-size: 18px;
+}
+@media screen and (max-width:480px){
+ 
+}
+@media screen and (max-width:280px){
+    .resultado{
+        position: absolute;
+        top:600px;
+        left: 100px;
+    }   
+    .cajondeResultado li{
+        position: absolute;
+        top: 710px;
+        left: 250px;
+        text-align: center;
+    }
+    
+    .resivir{
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        width:600px;
+        height: 100px;
+        background-image: none
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: 50px 90px;
+        font-size: 18px;
+        color: #495057;
+        font-family: inter;
+        font-weight: bold;
+    }
+}

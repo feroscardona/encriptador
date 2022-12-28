@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador  de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <header>
+            <div class=cajaLogo>
+                <img class="logo" src="imagenes/Vector.png" alt="logo alura">
+                
+            </div>
+            
+        </header>
+        <main>
+            <form>
+                <fieldset class="textEncripDesencrip">
+                    <textarea  autofocus cols="20" rows="10" class="texto" placeholder="Ingresa tu texto"required onkeyup="remplazar(this)"></textarea>
+                    
+                    <div class="botonesEncrip"> 
+                        
+                        <input type="button" class="botonEnviar" onclick="clickBoton1()" value="ENCRIPTAR">
+                        <input type="button" class="botonDesencriptar" onclick="clickBoton2()" value="DESENCRIPTAR">
+                    
+                    </div>
+                </fieldset>
+                <section class="resultado">
+                    
+                    <textarea readonly class="resivir"  cols="20" rows="10" ></textarea>
+                    
+                    
+                </section>
+                <section>
+                    <ul class="cajondeResultado">
+                        
+                        <li >
+                            <p class="mensjNoEncon">Ningún mensaje fue encontrado.</p>
+                            <p class="mensjNoEncon2">Ingresa tu texto en el compo Encriptar o Desencriptar.</p>
+                            <input type="submit" value="COPIAR" class="botoncopy" onclick="copiar()">
+                        </li>
+                        
+                        
+                    </ul>
+                    
+                </section>
+
+            </form>
+        </main>
+        <script src="script.js"></script>
+
+    </body>
+
+   
+  
+
+
+
+
+
+
+</html>    
+
