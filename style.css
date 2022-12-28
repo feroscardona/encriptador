@@ -183,7 +183,7 @@ fieldset{
         width:600px;
         height: 100px;
         background-image: none
-        background-repeat: no-repeat;
+        background-repeat no-repeat;
         background-size: 300px;
         background-position: 50px 90px;
         font-size: 18px;
