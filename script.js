@@ -12,6 +12,7 @@ function clickBoton1() {
     mensajeResivido.style.backgroundImage = "none";
     parrafo.style.display = "none"
     parrafo2.style.display = "none"
+    valorEncriptacion.value = ""
 }
 
 // activa el boton desiencriptar
@@ -21,7 +22,7 @@ function clickBoton2() {
     mensajeResivido.style.backgroundImage = "none";
     parrafo.style.display= "none"
     parrafo2.style.display = "none"
-    
+    valorEncriptacion.value = ""
 }
 
 // activa el boton copiar
