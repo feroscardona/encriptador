@@ -1,5 +1,5 @@
 body{
-    width: 940px;
+    max-width: 1000px;
     margin: 0 ;
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
