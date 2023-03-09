@@ -7,7 +7,7 @@ var parrafo2 = document.querySelector(".mensjNoEncon2")
 
 // activa el  boton encriptar
 function clickBoton1() {
-     const Entregar = encriptar(valorEncriptacion.value);
+    const Entregar = encriptar(valorEncriptacion.value);
     mensajeResivido.value = Entregar;
     mensajeResivido.style.backgroundImage = "none";
     parrafo.style.display = "none"
@@ -29,6 +29,8 @@ function clickBoton2() {
 function copiar() {
    mensajeResivido.select();
    navigator.clipboard.writeText(mensajeResivido.value);
+   parrafo.style.display= "block"
+   parrafo2.style.display = "block"
    mensajeResivido.value = "";
    
    
@@ -52,16 +54,17 @@ function encriptar(string){
 }
 
 // funcion para desencriptar
-function desencriptar(string2){
+function desencriptar(string){
     
-    for(let i = 0;i < string2.length;i++){
-        if(string2.includes(codigo[i][1])){
-            string2 = string2.replaceAll(codigo[i][1],codigo[i][0])
+    for(let i = 0;i < codigo.length;i++){
+        if(string.includes(codigo[i][1])){
+            console.log(codigo[i][1])
+            string = string.replaceAll(codigo[i][1],codigo[i][0])
         }
     }
 
  
- return string2
+ return string
    
 }
 
